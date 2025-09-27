@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>Burning</title>
+    <meta name="Description" content="Description">
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+<header itemscope itemtype="http://schema.org/WPHeader">
+	<div class="header">
+		<div class="header_top">
+			<div class="wrapper">
+				<div class="header_t">
+					<div class="header_top_left">
+						<a href="/" class="header_top_left_logo">
+							<span class="header_top_left_logo_txt">
+								<span class="logo">Burning</span>
+								<span>Universal</span>
+							</span>
+							<img src="img/logo.png">
+						</a>
+					</div>
+					<div class="header_top_right">
+						<div class="header_top_right_menu">
+							<div class="header_top_right_menu_page">
+								<ul>
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="#">Sitemap</a></li>
+								</ul>
+							</div>
+							<div class="header_top_right_menu_soc">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-x-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-tiktok"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-telegram"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header_top_right_search">
+							<input type="text" name="Search">
+							<button>
+								<i class="fa fa-search"></i>
+							</button>
+						</div>
+					</div>
+					<div class="header_top_burger"></div>
+				</div>
+			</div>
+		</div>
+		<div class="header_bottom">
+			<div class="wrapper">
+				<ul>
+					<li><a href="#" class="active">All</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Popular</a></li>
+					<li><a href="#">Category</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Novelty</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="body">
+	<div class="wrapper">
+		<div class="error">
+			<h1><span>404</span> – Page Not Found</h1>
+			<p>Oops! Looks like you’ve reached a scene that doesn’t exist.</p>
+			<p>The page you’re looking for might have been removed, had its name changed, or is simply taking a break behind the scenes.</p>
+			<p>Here’s what you can do:</p>
+			<ul>
+				<li>🎥 Go back to the <a href="#">Home Page</a></li>
+				<li>🍿 Check out our latest <a href="#">Movie Reviews</a></li>
+				<li>🎬 Explore some <a href="#">Film Articles</a></li>
+			</ul>
+			<p>Don’t worry — the show must go on!</p>
+			<div class="attention_layer">
+				<div id="escapeBtn" class="attention">
+				  <img src="img/attention.png">
+				  <span>don't touch</span>
+				</div>
+			</div>
+			<div id="surpriseImg" class="easter">
+				<img src="img/spongebob.png">
+			</div>
+			<audio id="surpriseAudio" src="surprise.mp3" style="display: none;"></audio>
+		</div>
+	</div>
+</div>
+<div class="modal" id="modal">
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<div class="block_new_ttl">
+			<span>Question</span>
+		</div>
+		<form>
+			<div>
+				<label>Name:</label>
+				<input type="text" required>
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" required>
+			</div>
+			<div>
+				<label>Question:</label>
+				<textarea></textarea>
+			</div>
+			<button type="submit" class="btn">Send</button>
+		</form>
+	</div>
+</div>
+<footer itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class="wrapper">
+		<div class="footer">
+			<div class="footer_bl">
+				<a href="/" class="footer_bl_left_logo">
+					<span class="footer_bl_left_logo_txt">
+						<span class="footer_bl_left_logo_txt_name">Burning</span>
+						<span>Universal</span>
+					</span>
+					<img src="img/logo.png">
+				</a>
+				<div class="footer_bl_left">
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-x-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-tiktok"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-telegram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_bl">
+				<div class="footer_bl_center_menu-top">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Contacts</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+				</div>
+				<div class="footer_bl_center_menu-bottom">
+					<ul>
+						<li><a href="#">All</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Popular</a></li>
+						<li><a href="#">Category</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Novelty</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_bl footer_bl_right">
+				<span>© 2025. All rights reserved.</span>
+				<div>Any use or copying of site materials is permitted with the permission of the copyright holder and with reference to the source.</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function () {
+		$(".header_top_burger").click(function () {
+			$(".header").toggleClass("burger");
+		});
+		});
+	</script>
+	<script>
+		const btn = document.getElementById("escapeBtn");
+	  const img = document.getElementById("surpriseImg");
+	  const audio = document.getElementById("surpriseAudio");
+	  let clickCount = 0;
+	
+	  btn.addEventListener("click", () => {
+		const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+		const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+		btn.style.left = `${x}px`;
+		btn.style.top = `${y}px`;
+	
+		clickCount++;
+		if (clickCount === 5) {
+		  img.classList.add("show");
+	
+		  audio.currentTime = 0;
+		  audio.play();
+	
+		  setTimeout(() => {
+			img.classList.remove("show");
+		  }, 3000);
+		}
+	  });
+	</script>
+</footer>
+</body>
+</html>
