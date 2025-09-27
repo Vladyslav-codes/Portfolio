@@ -78,7 +78,7 @@ img {
     object-fit: cover;
     filter: grayscale(1);
     max-width: 250px;
-    min-height: 210px;
+    height: 230px;
 }
 .hero_l_txt {
     text-align: center;
@@ -378,4 +378,5 @@ img {
     .modal_block h2 {
         font-size: 15px;
     }
+
 }
