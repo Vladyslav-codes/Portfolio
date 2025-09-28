@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <title>BEAUTY</title>
+    <meta name="Description" content="Description">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+<header>
+	<div class="menu">
+		<div class="wrp">
+			<div class="menu_left">
+				<a href="index.html" id="redlogo">BEAUTY</a>
+				<ul id="redmenu">
+					<li><a href="category.html">Celebrities</a></li>
+					<li><a href="category.html">Fashion</a></li>
+					<li><a href="category.html">Beauty and health</a></li>
+				</ul>
+			</div>
+			<div class="menu_right">
+				<div class="menu_right_bt openwindow">
+					<img src="img/search.svg">
+				</div>
+				<div class="menu_right_pop blockcentr">
+					<div class="wrp">
+						<div class="menu_right_pop_in">
+							<span class="openwindow">
+								<img src="img/done.svg">
+							</span>
+							<form>
+								<div>
+									<input type="text" name="search" placeholder="Search">
+									<button>
+										<img src="img/search-white.svg">
+									</button>
+								</div>
+								<span>Enter a search query</span>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="menu_right_bt openwindow2">
+					<img src="img/menu.svg">
+				</div>
+				<div class="menu_right_pop blockcentr2">
+					<div class="wrp">
+						<div class="menu_right_pop_in">
+							<span class="openwindow2">
+								<img src="img/done.svg">
+							</span>
+							<div class="menu_right_pop_in_menu">
+								<ul>
+									<li><a href="category.html">Celebrities</a></li>
+									<li><a href="category.html">Fashion</a></li>
+									<li><a href="category.html">Beauty and health</a></li>
+								</ul>
+								<ul>
+									<li><a href="single.html">About the editors</a></li>
+									<li><a href="single.html">Advertisers</a></li>
+									<li><a href="single.html">Contacts</a></li>
+								</ul>
+								<div>
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fa-brands fa-youtube"></i></a>
+									<a href="#"><i class="fa-brands fa-instagram"></i></a>
+									<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+									<a href="#"><i class="fa-brands fa-threads"></i></a>
+									<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+									<a href="#"><i class="fa-brands fa-telegram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="error">
+	<div class="wrp">
+		<div class="error_bl">
+			<h1>Page not found</h1>
+			<p>Unfortunately, the page you are looking for does not exist.</p>
+			<div class="body_load">
+				<a href="index.html" class="btn">Go to Homepage</a>
+			</div>
+		</div>
+	</div>
+	<div class="attention_layer">
+		<div id="escapeBtn" class="attention">
+		  <img src="img/attention.png">
+		  <span>don't touch</span>
+		</div>
+	</div>
+	<div id="surpriseImg" class="easter">
+		<img src="img/cat.png">
+	</div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="wrp">
+			<div class="footer_left">
+				<a href="index.html">BEAUTY</a>
+				<div class="footer_left_txt">© 2025 Beauty.com. All rights reserved</div>
+			</div>
+			<div class="footer_center">
+				<div class="footer_title">Menu</div>
+				<ul>
+					<li><a href="category.html">Fashion</a></li>
+					<li><a href="category.html">Celebrities </a></li>
+					<li><a href="category.html">Beauty and health</a></li>
+				</ul>
+			</div>
+			<div class="footer_center left-foot">
+				<div class="footer_title">About us</div>
+				<ul>
+					<li><a href="single.html">About the editors</a></li>
+					<li><a href="single.html">Advertisers</a></li>
+					<li><a href="single.html">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="footer_right">
+				<div class="footer_title">Social networks</div>
+				<div class="footer_right_soc">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-youtube"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+					<a href="#"><i class="fa-brands fa-threads"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-telegram"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+	//Slide header button
+	$(function() {
+	$(".openwindow").on("click", function() {
+		$(".blockcentr").slideToggle(500);
+	});
+
+	$(".openwindow2").on("click", function() {
+		$(".blockcentr2").slideToggle(500);
+	});
+	});
+</script>
+<script>
+// 404 button
+const btn = document.getElementById("escapeBtn");
+  const img = document.getElementById("surpriseImg");
+  let clickCount = 0;
+  if(btn && img) {
+    btn.addEventListener("click", () => {
+      const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+      const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+      btn.style.left = `${x}px`;
+      btn.style.top = `${y}px`;
+
+      clickCount++;
+      if (clickCount === 5) {
+        img.classList.add("show");
+        setTimeout(() => img.classList.remove("show"), 3000);
+      }
+    });
+  }
+</script>
+</body>
+</html>
