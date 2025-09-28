@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<title>Психолог Оксана Приходько</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg">
+        </a>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="#about">Про мене</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#courses">Курси</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#blog">Статті</a></li>
+          <li><a href="#pricing">Ціни</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <i class="fa fa-search" onclick="toggleBox(this)"></i>
+        <div id="myBox" class="search_bl">
+          <input type="text" placeholder="Пошук">
+          <button>
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div id="burger"></div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero_bg">
+      <div class="wrap">
+        <div class="layout hidden-block">
+          <h1>Психологічна підтримка та розвиток</h1>
+          <p>Індивідуальні консультації для покращення якості вашого життя</p>
+          <a href="#about" class="btn wbtn">Почати</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <div class="about_bl">
+        <div class="about_bl_l hidden-block">
+          <div class="about_bl_l_img">
+            <span class="about1">
+              <img src="img/about1.webp">
+            </span>
+            <span class="about2">
+              <img src="img/about2.webp">
+            </span>
+          </div>
+          <div class="about_bl_l_txt">Вірю, що кожна людина має внутрішні ресурси для змін — іноді потрібна лише підтримка, щоб знайти їх.</div>
+        </div>
+        <div class="about_bl_r hidden-block right">
+          <h2>Про мене</h2>
+          <p>Вітаю! Мене звати Оксана, я практичний психолог з понад 5-річним досвідом роботи в індивідуальному та груповому форматі. Моя мета — допомогти вам знайти внутрішню рівновагу, відновити впевненість у собі та навчитися жити в гармонії з собою та оточенням. У своїй роботі я поєдную науково підтверджені методи (когнітивно-поведінкову терапію, техніки майндфулнес, арт-терапію) з теплим та підтримуючим підходом.</p>
+          <div class="about_bl_r_sign">
+            <span>Оксана Приходько</span>
+            <a href="single.html" class="btn">Читати далі</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="wrap">
+      <h2>Послуги</h2>
+      <div class="services_grid">
+        <div class="service_item">
+          <img src="img/pexels-cottonbro-4101143.webp">
+          <h3><a href="single.html">консультації</a></h3>
+          <p>Допомога у складних життєвих ситуаціях, подолання стресу та тривоги.</p>
+        </div>
+        <div class="service_item">
+          <img src="img/gemali-martinez-naO7yFfuBa4-unsplash.webp">
+          <h3><a href="single.html">Сімейна терапія</a></h3>
+          <p>Покращення взаємин і комунікації в сім’ї.</p>
+        </div>
+        <div class="service_item">
+          <img src="img/dylan-ferreira-HJmxky8Fvmo-unsplash.webp">
+          <h3><a href="single.html">Онлайн сесії</a></h3>
+          <p>Зручний формат консультацій через відеозв’язок.</p>
+        </div>
+      </div>
+      <a href="#" class="btn openModal">Приєднатися</a>
+    </div>
+  </section>
+
+  <section class="want">
+    <div class="wrap">
+      <div class="want_grid">
+        <div class="want_item hidden-block">
+          <img src="img/what.webp">
+        </div>
+        <div class="want_item hidden-block right">
+          <h2>Чого ви прагнете насправді?</h2>
+          <ul>
+            <li>Готові взяти кермо свого життя у власні руки?</li>
+            <li>Хочете відкрити нові можливості?</li>
+            <li>Втомилися миритися з меншим, ніж заслуговуєте, і відкладати великі мрії на потім?</li>
+            <li>Бажаєте отримати підтримку та натхнення, щоб чітко визначити й досягти своїх цілей?</li>
+          </ul>
+          <p>Тоді ви у правильному місці. Настав момент зробити крок уперед, розкрити свій потенціал і почати зміни, які наблизять вас до найкращої версії себе.</p>
+          <p><b>Почнемо разом!</b></p>
+          <a href="#courses" class="btn">Далі</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses" class="courses">
+    <div class="wrap">
+      <h2>Мої курси</h2>
+      <div class="posts_grid">
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/course1.webp">
+              <span>$144.00</span>
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>3 Тижні</span>
+              <span>25 Слухачів</span>
+            </div>
+            <h4>
+              <a href="single.html">Як позбутися зайвого та зосередитися на важливому.</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/course2.webp">
+              <span>$94.00</span>
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>2 Тижні</span>
+              <span>25 Слухачів</span>
+            </div>
+            <h4>
+              <a href="single.html">Адаптація до нових обставин.</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/course3.webp">
+              <span>$94.00</span>
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>2 Тижні</span>
+              <span>30 Слухачів</span>
+            </div>
+            <h4>
+              <a href="single.html">Як жити "тут і зараз".</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/course4.webp">
+              <span>$144.00</span>
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>3 Тижні</span>
+              <span>20 Слухачів</span>
+            </div>
+            <h4>
+              <a href="single.html">Як розвивати лідерські якості.</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/course5.webp">
+              <span>$150.00</span>
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>3 Тижні</span>
+              <span>20 Слухачів</span>
+            </div>
+            <h4>
+              <a href="single.html">Як позбутися токсичних стосунків.</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/course6.webp">
+              <span>$80.00</span>
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>2 Тижні</span>
+              <span>25 Слухачів</span>
+            </div>
+            <h4>
+              <a href="single.html">Тайм-менеджмент без вигорання.</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <a href="category.html" class="btn">Переглянути всі</a>
+    </div>
+  </section>
+
+  <section class="achievements">
+    <div class="wrap">
+      <h2>Деякі з моїх досягнень, якими я дуже пишаюся</h2>
+      <div class="achievements_grid">
+        <div class="achievements_item hidden-block">
+          <img src="img/achievements1.webp">
+          <h3>300+ Клієнтів</h3>
+          <p>Понад 5 років індивідуальної та групової роботи, під час якої клієнти змогли подолати тривожність, відновити самооцінку та покращити стосунки.</p>
+        </div>
+        <div class="achievements_item">
+          <img src="img/achievements2.webp">
+        </div>
+        <div class="achievements_item hidden-block right">
+          <h3>“Емоційний баланс”</h3>
+          <p>Створила унікальну методику, яка поєднує когнітивно-поведінкову терапію, техніки майндфулнес та елементи арт-терапії.</p>
+          <img src="img/achievements3.webp">
+          <h3>Міжнародна конференція</h3>
+          <p>Виступила із доповідями про стрес-менеджмент та психологічну підтримку під час кризових ситуацій.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <h2>Відгуки</h2>
+      <div class="reviews_grid slider">
+        <div class="reviews_item">
+          <p>“Я звернулася, коли відчувала постійну тривогу й не могла впоратися зі стресом на роботі. Уже після кількох зустрічей навчилася технік, які реально допомагають заспокоїтись. Зараз відчуваю себе впевненіше і спокійніше. Дуже вдячна!”</p>
+          <span>~ Олена ~</span>
+        </div>
+        <div class="reviews_item">
+          <p>“Ми з дружиною ходили на сімейні консультації. За допомогою психолога вдалося навчитися чути один одного без сварок і знаходити спільні рішення. Наші стосунки стали набагато міцнішими.”</p>
+          <span>~ Андрій ~</span>
+        </div>
+        <div class="reviews_item">
+          <p>“Довго боролася з низькою самооцінкою. На сесіях отримала не тільки підтримку, а й конкретні вправи. Вперше за багато років почала відчувати, що справді можу щось змінити у своєму житті.”</p>
+          <span>~ Марія Приходько ~</span>
+        </div>
+        <div class="reviews_item">
+          <p>“Я проходила онлайн-курс ‘Емоційний баланс’. Дуже сподобалося, що все пояснено простою мовою, були практичні завдання й зворотний зв’язок. Помітила, що реагую на проблеми вже зовсім по-іншому.”</p>
+          <span>~ Світлана ~</span>
+        </div>
+        <div class="reviews_item">
+          <p>“Чесно кажучи, спочатку сумнівався, чи допоможе психолог. Але зараз можу сказати — це було найкраще рішення. Вирішив кілька внутрішніх питань і відчув, що рухаюся вперед без страху та постійних сумнівів.”</p>
+          <span>~ Ігор ~</span>
+        </div>
+      </div>
+      <div class="reviews_grid-photo slider">
+        <div>
+          <img src="img/ava1.jpg">
+        </div>
+        <div>
+          <img src="img/ava2.jpg">
+        </div>
+        <div>
+          <img src="img/ava3.jpg">
+        </div>
+        <div>
+          <img src="img/ava1.jpg">
+        </div>
+        <div>
+          <img src="img/ava2.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="wrap">
+      <h2>Корисні статті</h2>
+      <div class="posts_grid">
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/post1.webp">
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>Березень 20, 2025</span>
+              <span><a href="category.html">Блог</a></span>
+            </div>
+            <h4>
+              <a href="single.html">5 простих технік для зниження стресу прямо зараз</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/post2.webp">
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>Травень 2, 2025</span>
+              <span><a href="category.html">Блог</a></span>
+            </div>
+            <h4>
+              <a href="single.html">Чому ми відкладаємо важливі справи і як перестати прокрастинувати</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/post3.webp">
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>Травень 18, 2025</span>
+              <span><a href="category.html">Блог</a></span>
+            </div>
+            <h4>
+              <a href="single.html">Емоційний інтелект: що це і як він допомагає у житті</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/post4.webp">
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>Червень 10, 2025</span>
+              <span><a href="category.html">Блог</a></span>
+            </div>
+            <h4>
+              <a href="single.html">Як розпізнати емоційне вигорання і запобігти йому</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/post5.webp">
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>Червень 19, 2025</span>
+              <span><a href="category.html">Блог</a></span>
+            </div>
+            <h4>
+              <a href="single.html">Тривожність: ворог чи сигнал?</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/post6.webp">
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>Червень 25, 2025</span>
+              <span><a href="category.html">Блог</a></span>
+            </div>
+            <h4>
+              <a href="single.html">Секрети гармонійних стосунків</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/post7.webp">
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>Серпень 8, 2025</span>
+              <span><a href="category.html">Блог</a></span>
+            </div>
+            <h4>
+              <a href="single.html">Як пробачити і відпустити образу</a>
+            </h4>
+          </div>
+        </div>
+        <div class="posts_item">
+          <div class="posts_item_img">
+            <a href="single.html">
+              <img src="img/post8.webp">
+            </a>
+          </div>
+          <div class="posts_item_txt">
+            <div>
+              <span>Серпень 20, 2025</span>
+              <span><a href="category.html">Блог</a></span>
+            </div>
+            <h4>
+              <a href="single.html">Майндфулнес: мистецтво жити тут і зараз</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <a href="category.html" class="btn">Переглянути всі</a>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="wrap">
+      <h2>Ціни</h2>
+      <div class="pricing_grid">
+        <div class="pricing_item hidden-block">
+          <h3>Індивідуальна консультація</h3>
+          <ul>
+            <li>Тривалість: 60 хвилин</li>
+            <li>Персоналізований підхід до вашої ситуації</li>
+            <li>Можливість працювати як офлайн, так і онлайн</li>
+            <li>Конфіденційність та комфортна атмосфера</li>
+            <li>Чіткі рекомендації після кожної зустрічі</li>
+          </ul>
+          <div>
+            <span>₴900</span> <span>/ 60хв</span>
+          </div>
+          <a href="#" class="btn openModal">Бронювати</a>
+        </div>
+        <div class="pricing_item">
+          <h3>Пакет “Місяць підтримки”</h3>
+          <ul>
+            <li>Системна робота для стабільних результатів</li>
+            <li>Знижка у порівнянні з оплатою кожної сесії окремо</li>
+            <li>Супровід у месенджері між зустрічами</li>
+            <li>Можливість відстежувати прогрес щотижня</li>
+          </ul>
+          <div>
+            <span>₴3200</span> <span>/ місяць</span>
+          </div>
+          <a href="#" class="btn openModal">Бронювати</a>
+        </div>
+        <div class="pricing_item hidden-block right">
+          <h3>Пара або сімейна консультація</h3>
+          <ul>
+            <li>Допомога у вирішенні конфліктів без емоційних загострень</li>
+            <li>Покращення комунікації та взаєморозуміння</li>
+            <li>Створення плану дій для зміцнення стосунків</li>
+            <li>Підтримка обох партнерів у процесі змін</li>
+          </ul>
+          <div>
+            <span>₴1400</span> <span>/ 90хв</span>
+          </div>
+          <a href="#" class="btn openModal">Бронювати</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book">
+    <div class="wrap">
+      <div class="book_grid">
+        <div class="book_item hidden-block">
+          <h2>Моя книга</h2>
+          <p>У книзі я ділюся перевіреними методами роботи з тривожністю, стресом та емоційними перепадами. Читач отримає інструменти для підвищення самооцінки, побудови здорових стосунків та досягнення внутрішньої гармонії. Видання містить практичні вправи, приклади з реальних історій клієнтів та поради, які можна застосувати вже сьогодні.</p>
+          <a href="#" class="btn openModal">Замовити</a>
+        </div>
+        <div class="book_item hidden-block right">
+          <div>
+            <img src="img/book.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay" class="popup">
+    <div class="popup_layout">
+      <div class="popup_layout_block">
+        <h2>Заявка</h2>
+        <p>Залиште свої контактні дані і я зв'яжуся з Вами!</p>
+        <div class="popup_layout_block_form">
+          <form>
+            <div>
+              <input type="text" placeholder="Ім'я *">
+              <input type="tel" placeholder="Номер телефону *">
+            </div>
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Повідомлення"></textarea>
+            <button class="btn">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer_logo">
+        <a href="index.html">
+          <img src="img/logo2.svg">
+        </a>
+      </div>
+      <div class="footer_menu">
+        <nav>
+          <ul>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#courses">Курси</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#blog">Статті</a></li>
+            <li><a href="#pricing">Ціни</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer_social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>© 2025 Олена Приходько — практичний психолог</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    //Slider
+    $(document).on('ready', function() {
+      $('.reviews_grid').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        asNavFor: '.reviews_grid-photo'
+      });
+      $('.reviews_grid-photo').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.reviews_grid',
+        dots: false,
+        centerMode: true,
+        autoplay: true,
+        infinite: true,
+        variableWidth: true,
+        focusOnSelect: true
+      });
+    });
+  </script>
+  <script>
+    //Burger
+    document.getElementById("burger").addEventListener("click", function() {
+      this.classList.toggle("closed");
+      document.getElementById("menu").classList.toggle("mmenu");
+    });
+  </script>
+  <script>
+    //Search
+    function toggleBox(trigger) {
+      const box = document.getElementById("myBox");
+      const allIcons = document.querySelectorAll('.fa');
+
+      allIcons.forEach(icon => {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-search");
+      });
+
+      if (!box.classList.contains("show")) {
+        box.style.display = "flex";
+        requestAnimationFrame(() => {
+          box.classList.add("show");
+          trigger.classList.remove("fa-search");
+          trigger.classList.add("fa-times");
+        });
+      } else {
+        box.classList.remove("show");
+        setTimeout(() => {
+          box.style.display = "none";
+        }, 500);
+      }
+    }
+  </script>
+  <script>
+    //Anchor
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = this.getAttribute('href').slice(1);
+            const target = document.getElementById(id);
+    
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+  </script>
+  <script>
+    //Modal
+    document.querySelectorAll(".openModal").forEach(button => {
+      button.addEventListener("click", () => {
+        document.getElementById("overlay").style.display = "flex";
+      });
+    });
+
+    document.getElementById("overlay").addEventListener("click", (e) => {
+      if (e.target.id === "overlay") {
+        document.getElementById("overlay").style.display = "none";
+      }
+    });
+  </script>
+  <script>
+    //Slide left/right
+    document.addEventListener('DOMContentLoaded', () => {
+      const blocks = Array.from(document.querySelectorAll('.hidden-block'));
+    
+      if (!('IntersectionObserver' in window)) {
+        blocks.forEach(el => el.classList.add('show2'));
+        return;
+      }
+    
+      const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show2');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        threshold: 0.01,
+        rootMargin: '0px 0px -10% 0px'
+      });
+    
+      blocks.forEach(el => io.observe(el));
+    
+      const mo = new MutationObserver(muts => {
+        muts.forEach(m => {
+          m.addedNodes.forEach(node => {
+            if (node.nodeType !== 1) return;
+            if (node.matches?.('.hidden-block')) io.observe(node);
+            node.querySelectorAll?.('.hidden-block').forEach(n => io.observe(n));
+          });
+        });
+      });
+      mo.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
+</body>
+</html>

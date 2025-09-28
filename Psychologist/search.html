@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<title>Психолог Оксана Приходько</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Про мене</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#courses">Курси</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#blog">Статті</a></li>
+          <li><a href="#pricing">Ціни</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <i class="fa fa-search" onclick="toggleBox(this)"></i>
+        <div id="myBox" class="search_bl">
+          <input type="text" placeholder="Пошук">
+          <button>
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="category">
+    <div class="wrap">
+      <div class="category_bread">
+        <a href="index.html">Головна</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <span>Результати пошуку</span>
+      </div>
+      <div class="category_title">
+        <h1>Результати пошуку: </h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="wrap">
+      <div class="posts_grid-category">
+        <div class="posts_grid">
+          <div class="posts_item">
+            <div class="posts_item_img">
+              <a href="single.html">
+                <img src="img/post1.webp">
+              </a>
+            </div>
+            <div class="posts_item_txt">
+              <div>
+                <span>Березень 20, 2025</span>
+              </div>
+              <h4>
+                <a href="single.html">5 простих технік для зниження стресу прямо зараз</a>
+              </h4>
+            </div>
+          </div>
+          <div class="posts_item">
+            <div class="posts_item_img">
+              <a href="single.html">
+                <img src="img/post2.webp">
+              </a>
+            </div>
+            <div class="posts_item_txt">
+              <div>
+                <span>Травень 2, 2025</span>
+              </div>
+              <h4>
+                <a href="single.html">Чому ми відкладаємо важливі справи і як перестати прокрастинувати</a>
+              </h4>
+            </div>
+          </div>
+          <div class="posts_item">
+            <div class="posts_item_img">
+              <a href="single.html">
+                <img src="img/post3.webp">
+              </a>
+            </div>
+            <div class="posts_item_txt">
+              <div>
+                <span>Травень 18, 2025</span>
+              </div>
+              <h4>
+                <a href="single.html">Емоційний інтелект: що це і як він допомагає у житті</a>
+              </h4>
+            </div>
+          </div>
+          <div class="posts_item">
+            <div class="posts_item_img">
+              <a href="single.html">
+                <img src="img/post4.webp">
+              </a>
+            </div>
+            <div class="posts_item_txt">
+              <div>
+                <span>Червень 10, 2025</span>
+              </div>
+              <h4>
+                <a href="single.html">Як розпізнати емоційне вигорання і запобігти йому</a>
+              </h4>
+            </div>
+          </div>
+          <div class="posts_item">
+            <div class="posts_item_img">
+              <a href="single.html">
+                <img src="img/post5.webp">
+              </a>
+            </div>
+            <div class="posts_item_txt">
+              <div>
+                <span>Червень 19, 2025</span>
+              </div>
+              <h4>
+                <a href="single.html">Тривожність: ворог чи сигнал?</a>
+              </h4>
+            </div>
+          </div>
+          <div class="posts_item">
+            <div class="posts_item_img">
+              <a href="single.html">
+                <img src="img/post6.webp">
+              </a>
+            </div>
+            <div class="posts_item_txt">
+              <div>
+                <span>Червень 25, 2025</span>
+              </div>
+              <h4>
+                <a href="single.html">Секрети гармонійних стосунків</a>
+              </h4>
+            </div>
+          </div>
+          <div class="posts_item">
+            <div class="posts_item_img">
+              <a href="single.html">
+                <img src="img/post7.webp">
+              </a>
+            </div>
+            <div class="posts_item_txt">
+              <div>
+                <span>Серпень 8, 2025</span>
+              </div>
+              <h4>
+                <a href="single.html">Як пробачити і відпустити образу</a>
+              </h4>
+            </div>
+          </div>
+          <div class="posts_item">
+            <div class="posts_item_img">
+              <a href="single.html">
+                <img src="img/post8.webp">
+              </a>
+            </div>
+            <div class="posts_item_txt">
+              <div>
+                <span>Серпень 20, 2025</span>
+              </div>
+              <h4>
+                <a href="single.html">Майндфулнес: мистецтво жити тут і зараз</a>
+              </h4>
+            </div>
+          </div>
+          <div class="posts_nav">
+            <span>1</span>
+            <a href="search.html">2</a>
+            <a href="search.html"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_widget">
+            <div class="sidebar_widget_layout">
+              <h2>Популярні статті</h2>
+              <div class="sidebar_widget_rated">
+                <div class="sidebar_widget_rated_item">
+                  <div>
+                    <a href="single.html">
+                      <img src="img/post4.webp">
+                    </a>
+                  </div>
+                  <div>
+                    <a href="single.html">
+                      <h3>Як розпізнати емоційне вигорання і запобігти йому</h3>
+                    </a>
+                    <span>Червень 10, 2025</span>
+                  </div>
+                </div>
+                <div class="sidebar_widget_rated_item">
+                  <div>
+                    <a href="single.html">
+                      <img src="img/post8.webp">
+                    </a>
+                  </div>
+                  <div>
+                    <a href="single.html">
+                      <h3>Майндфулнес: мистецтво жити тут і зараз</h3>
+                    </a>
+                    <span>Серпень 20, 2025</span>
+                  </div>
+                </div>
+                <div class="sidebar_widget_rated_item">
+                  <div>
+                    <a href="single.html">
+                      <img src="img/post5.webp">
+                    </a>
+                  </div>
+                  <div>
+                    <a href="single.html">
+                      <h3>Тривожність: ворог чи сигнал?</h3>
+                    </a>
+                    <span>Червень 19, 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar_widget">
+            <div class="sidebar_widget_layout">
+              <h2>Теги</h2>
+              <div class="sidebar_widget_tags">
+                <a href="category.html">Саморозвиток</a>
+                <a href="category.html">Образи</a>
+                <a href="category.html">Стосунки</a>
+                <a href="category.html">Сім'я</a>
+                <a href="category.html">Здоров'я</a>
+                <a href="category.html">Тривожність</a>
+                <a href="category.html">Емоції</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay" class="popup">
+    <div class="popup_layout">
+      <div class="popup_layout_block">
+        <h2>Заявка</h2>
+        <p>Залиште свої контактні дані і я зв'яжуся з Вами!</p>
+        <div class="popup_layout_block_form">
+          <form>
+            <div>
+              <input type="text" placeholder="Ім'я *">
+              <input type="tel" placeholder="Номер телефону *">
+            </div>
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Повідомлення"></textarea>
+            <button class="btn">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer_logo">
+        <a href="index.html">
+          <img src="img/logo2.svg">
+        </a>
+      </div>
+      <div class="footer_menu">
+        <nav>
+          <ul>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#courses">Курси</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#blog">Статті</a></li>
+            <li><a href="404.html">Ціни</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer_social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>© 2025 Олена Приходько — практичний психолог</p>
+    </div>
+  </footer>
+
+  <script>
+    //Search
+    function toggleBox(trigger) {
+      const box = document.getElementById("myBox");
+      const allIcons = document.querySelectorAll('.fa');
+
+      // Повертаємо всім іконкам fa-search
+      allIcons.forEach(icon => {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-search");
+      });
+
+      if (!box.classList.contains("show")) {
+        // Показуємо
+        box.style.display = "flex";
+        requestAnimationFrame(() => {
+          box.classList.add("show");
+          trigger.classList.remove("fa-search");
+          trigger.classList.add("fa-times");
+        });
+      } else {
+        // Ховаємо
+        box.classList.remove("show");
+        setTimeout(() => {
+          box.style.display = "none";
+        }, 500);
+      }
+    }
+  </script>
+  <script>
+    //Anchor
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = this.getAttribute('href').slice(1);
+            const target = document.getElementById(id);
+    
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+  </script>
+  <script>
+    //Modal
+    document.querySelectorAll(".openModal").forEach(button => {
+      button.addEventListener("click", () => {
+        document.getElementById("overlay").style.display = "flex";
+      });
+    });
+
+    document.getElementById("overlay").addEventListener("click", (e) => {
+      if (e.target.id === "overlay") {
+        document.getElementById("overlay").style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

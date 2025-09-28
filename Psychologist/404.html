@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<title>Психолог Оксана Приходько</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Про мене</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#courses">Курси</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#blog">Статті</a></li>
+          <li><a href="#pricing">Ціни</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <i class="fa fa-search" onclick="toggleBox(this)"></i>
+        <div id="myBox" class="search_bl">
+          <input type="text" placeholder="Пошук">
+          <button>
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="error">
+    <div class="wrap">
+      <div class="error_bl">
+        <h1>Помилка 404</h1>
+        <p>Такої сторінки не існує, вона була видалена або Ви перейшли за неправильним посиланням.</p>
+        <a href="index.html" class="btn">На головну</a>
+      </div>
+    </div>
+    <div class="attention_layer">
+      <div id="escapeBtn" class="attention">
+        <img src="img/attention.png">
+        <span>не натискай</span>
+      </div>
+    </div>
+    <div id="surpriseImg" class="easter">
+      <img src="img/lizard.png">
+    </div>
+  </section>
+
+  <section id="overlay" class="popup">
+    <div class="popup_layout">
+      <div class="popup_layout_block">
+        <h2>Заявка</h2>
+        <p>Залиште свої контактні дані і я зв'яжуся з Вами!</p>
+        <div class="popup_layout_block_form">
+          <form>
+            <div>
+              <input type="text" placeholder="Ім'я *">
+              <input type="tel" placeholder="Номер телефону *">
+            </div>
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Повідомлення"></textarea>
+            <button class="btn">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer_logo">
+        <a href="index.html">
+          <img src="img/logo2.svg">
+        </a>
+      </div>
+      <div class="footer_menu">
+        <nav>
+          <ul>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#courses">Курси</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#blog">Статті</a></li>
+            <li><a href="404.html">Ціни</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer_social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>© 2025 Олена Приходько — практичний психолог</p>
+    </div>
+  </footer>
+
+  <script>
+    //404
+    const btn = document.getElementById("escapeBtn");
+    const img = document.getElementById("surpriseImg");
+    let clickCount = 0;
+
+    btn.addEventListener("click", () => {
+      const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+      const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+      btn.style.left = `${x}px`;
+      btn.style.top = `${y}px`;
+
+      clickCount++;
+      if (clickCount === 5) {
+        img.classList.add("show");
+        setTimeout(() => {
+          img.classList.remove("show");
+        }, 3000);
+      }
+    });
+  </script>
+  <script>
+    //FAQ
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+  <script>
+    //Search
+    function toggleBox(trigger) {
+      const box = document.getElementById("myBox");
+      const allIcons = document.querySelectorAll('.fa');
+
+      allIcons.forEach(icon => {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-search");
+      });
+
+      if (!box.classList.contains("show")) {
+        box.style.display = "flex";
+        requestAnimationFrame(() => {
+          box.classList.add("show");
+          trigger.classList.remove("fa-search");
+          trigger.classList.add("fa-times");
+        });
+      } else {
+        box.classList.remove("show");
+        setTimeout(() => {
+          box.style.display = "none";
+        }, 500);
+      }
+    }
+  </script>
+  <script>
+    //Anchor
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = this.getAttribute('href').slice(1);
+            const target = document.getElementById(id);
+    
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+  </script>
+  <script>
+    //Modal
+    document.querySelectorAll(".openModal").forEach(button => {
+      button.addEventListener("click", () => {
+        document.getElementById("overlay").style.display = "flex";
+      });
+    });
+
+    document.getElementById("overlay").addEventListener("click", (e) => {
+      if (e.target.id === "overlay") {
+        document.getElementById("overlay").style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
