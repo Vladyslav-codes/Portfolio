@@ -37,7 +37,7 @@ font-weight: 900;
 }
 @font-face {
 font-family: "Arial";  
-src: url("fonts/arial.TTF"); 
+src: url("fonts/arial.ttf"); 
 font-style: normal; 
 font-weight: 400;
 }
@@ -1355,3 +1355,4 @@ footer .wrp {
         height: 170px;
     }
 }
+
