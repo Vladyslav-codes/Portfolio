@@ -202,6 +202,7 @@ img {
 .hero_r_block_work {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .hero_r_block_work_bl a {
     height: 300px;
@@ -380,4 +381,5 @@ img {
     }
 
 }
+
 
