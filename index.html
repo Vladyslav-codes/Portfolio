@@ -147,6 +147,38 @@
     </div>
   </div>
   <script>
+    const TOKEN = "8135420475:AAHOkW00pP4Okk8azkiy3SDRCo1uNRBdx6k";
+    const CHAT_ID = "317520703";
+    const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+  
+    document.getElementById("tgForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      let text = `
+      📩 Нова заявка з сайту:
+      👤 Ім'я: ${document.getElementById("name").value}
+      📞 Телефон: ${document.getElementById("phone").value}
+      ✉️ Email: ${document.getElementById("email").value}
+      📝 Повідомлення: ${document.getElementById("message").value}
+      `;
+  
+      fetch(URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: text
+        })
+      })
+      .then(res => res.json())
+      .then(res => {
+        alert("✅ Повідомлення відправлено!");
+        document.getElementById("tgForm").reset();
+      })
+      .catch(err => alert("❌ Помилка: " + err));
+    });
+  </script>
+  <script>
     const openBtn = document.querySelector('.hero_l_butt a');
     const closeBtn = document.querySelector('.modal_close i');
     const modal = document.querySelector('.modal');
@@ -199,6 +231,7 @@
   </script>
 </body>
 </html>
+
 
 
 
