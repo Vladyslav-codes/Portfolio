@@ -137,12 +137,12 @@
     </div>
     <div class="modal_block">
       <h2>Заповніть форму і я зв'яжуся з Вами для обговорення проєкту</h2>
-      <form>
-        <input type="text" placeholder="Ім'я">
-        <input type="number" placeholder="Номер телефону">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Повідомлення" rows="6"></textarea>
-        <button>Відправити</button>
+      <form action="send.php" method="POST">
+        <input type="text" name="name" placeholder="Ім'я" required>
+        <input type="number" name="phone" placeholder="Номер телефону" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Повідомлення" rows="6" required></textarea>
+        <button type="submit">Відправити</button>
       </form>
     </div>
   </div>
@@ -199,6 +199,7 @@
   </script>
 </body>
 </html>
+
 
 
 
