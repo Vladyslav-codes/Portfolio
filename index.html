@@ -137,11 +137,11 @@
     </div>
     <div class="modal_block">
       <h2>Заповніть форму і я зв'яжуся з Вами для обговорення проєкту</h2>
-      <form action="send.php" method="POST">
-        <input type="text" name="name" placeholder="Ім'я" required>
-        <input type="number" name="phone" placeholder="Номер телефону" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Повідомлення" rows="6" required></textarea>
+      <form id="tgForm">
+        <input type="text" id="name" placeholder="Ім'я" required>
+        <input type="number" id="phone" placeholder="Номер телефону" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Повідомлення" rows="6" required></textarea>
         <button type="submit">Відправити</button>
       </form>
     </div>
@@ -231,6 +231,7 @@
   </script>
 </body>
 </html>
+
 
 
 
